@@ -1,0 +1,14 @@
+{
+  "name": "onebank",
+  "private": true,
+  "scripts": {
+    "start": "meteor run"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.14.8",
+    "axios": "^0.21.4",
+    "jquery": "^3.6.0",
+    "meteor-node-stubs": "^1.0.3",
+    "moment": "^2.29.1"
+  }
+}

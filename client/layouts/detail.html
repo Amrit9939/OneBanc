@@ -1,0 +1,12 @@
+<template name="detail">
+   <div class="detail">
+     {{#each detail}}
+       {{#if check this.unique}}
+          <h3>Transaction detail</h3>
+          <p>Date-<span> {{date}}</span></p>
+          <p>Amount-<span> {{amount}}</span></p>
+          <p>Description- <span> {{description}}</span></p>
+       {{/if}}
+     {{/each}}
+   </div>
+</template>

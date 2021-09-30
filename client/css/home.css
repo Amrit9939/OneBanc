@@ -1,0 +1,87 @@
+.history{
+  position: absolute;
+  left: 10%;
+  right: 10%;
+}
+.header{
+  border-style: solid;
+  margin-bottom: 5%;
+}
+.header-in{
+  display: inline-block;
+  margin: 0.1rem 0.2rem;
+}
+.name-number p{
+  margin: 0px 0px;
+}
+.icon{
+  background-color: rgba(152,251,152,0.3);
+  border-radius: 50%;
+  font-size: 1.5rem;
+  width: 3%;
+  text-align: center;
+}
+.arrow{
+  font-size: 2rem;
+}
+
+/* history design */
+.concrete{
+  /* background: red; */
+}
+.outer-box{
+  width: 30%;
+  margin-bottom: 3%;
+  /* background: red; */
+}
+.date{
+  text-align: right;
+  margin: 3%;
+}
+.box{
+  /* background: red; */
+  /* margin: 3%; */
+  display: flex;
+  align-items: stretch;
+  border-style: solid;
+  /* width: 30%; */
+}
+.left-in-box{
+  flex-grow: 1;
+  /* background: green; */
+}
+.right-in-box {
+  flex-grow: 1;
+  /* background: pink; */
+  text-align: right;
+}
+
+/* design inside box */
+.rupya{
+  font-size: 1.5rem;
+}
+.amount-value{
+  font-size: 2rem;
+}
+.amount{
+  margin-left: 5%
+}
+.trans-id{
+  margin-left: 5%;
+}
+.status{
+  margin-right: 5%;
+  margin-top: 9%;
+}
+.nav{
+  margin-right: 5%;
+  font-size: 2rem;
+}
+.reverse{
+  /* background: red; */
+  margin-left: 70%;
+}
+.tick {
+  color: green;
+  font-size: 1.5rem;
+}

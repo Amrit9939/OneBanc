@@ -1,0 +1,109 @@
+<template name="home">
+  <div class="history">
+    <!-- header design -->
+    <div class="header">
+      <div class="arrow header-in">
+        &#8592;
+      </div>
+      <div class="icon header-in">
+        <p>J</p>
+      </div>
+      <div class="name-number header-in">
+        <p>John Doe</p>
+        <p>+91 1234567809</p>
+      </div>
+    </div>
+    <!-- history design -->
+    <div class="sub-history">
+         {{#each trans}}
+         
+         <div class="concrete">
+           <div class="outer-box {{#if isequal this.direction}} reverse {{/if}} ">
+             <div class="box">
+                <div class="left-in-box">
+                  <div class="amount">
+                    <span class="rupya">&#8377;</span>
+                    <span class="amount-value">{{amount}}</span>
+                  </div>
+                  {{#if isequal1 this.type}}
+                  {{#if isequal this.direction}}
+                   <div>
+                     <button type="button" name="button">Cancel</button>
+                   </div>
+                   {{else}}
+                   <div class="button">
+                     <button type="button" name="button">Pay</button>
+                     <button type="button" name="button">Decline</button>
+                   </div>
+                  {{/if}}
+
+                  {{else}}
+                  <div class="trans-id">
+                    <span>Transaction ID</span><br>
+                    <span>{{id}}</span>
+                  </div>
+                  {{/if}}
+                </div>
+                <div class="right-in-box">
+                  <div class="status">
+                    {{#if isequal1 this.type}}
+
+                    {{#if isequal this.direction}}
+                       <span><span class="pending">&#8644;</span>You requested</span>
+                     {{else}}
+                       <span><span class="pending">&#8644;</span>Request Recived</span>
+                    {{/if}}
+
+                    {{else}}
+
+                      {{#if isequal this.direction}}
+                        <span><span class="tick">&#10003;</span>You paid</span>
+                        {{else}}
+                        <span><span class="tick">&#10003;</span>You Recived</span>
+                      {{/if}}
+
+                    {{/if}}
+
+                  </div>
+                  <div class="nav">
+                    <span class="nav-arrow">&#62;</span>
+                  </div>
+                </div>
+             </div>
+             <div class="date">
+               <span>{{date}}</span>
+             </div>
+           </div>
+         </div>
+
+         {{/each}}
+         <!-- <div class="outer-box">
+           <div class="box">
+              <div class="left-in-box">
+                <div class="amount">
+                  <span class="rupya">&#8377;</span>
+                  <span class="amount-value">10000</span>
+                </div>
+                <div class="trans-id">
+                  <span>Transaction ID</span><br>
+                  <span>A123456793844436627881</span>
+                </div>
+              </div>
+              <div class="right-in-box">
+                <div class="status">
+                  <span>You Recived</span>
+                </div>
+                <div class="nav">
+                  <span class="nav-arrow">&#62;</span>
+                </div>
+              </div>
+           </div>
+           <div class="date">
+             <span>18 Nov 2021, 18:00</span>
+           </div>
+         </div> -->
+
+
+       </div>
+    </div>
+</template>
